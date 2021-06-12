@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="../public/css/formStyles.css">
+    <title>Formulario Reserva</title>
+</head>
+
+<body>
+
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Inicio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Formulario</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Consulta</a>
+                    </li>                    
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <section>
+            <div class="card mb-12" style="max-width: 800px;">
+                <img class="col-sm-4" src="../public/img/kioto.jpg" alt="" width="300" height="300" id="kioto">
+                <form class="form-signin">
+
+                    <h1 class="h3 mb-3 font-weight-normal">Favor ingresar los siguientes datos</h1>
+                    <br>
+                    <div class="form-group row">
+                        <label for="inputNombre">Nombre</label>
+                        <div class="col-sm-10">
+                            <input id="nombre" type="text" id="inputNombre" class="form-control" placeholder="Nombre" required
+                                autofocus>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="inputApellido">Apellido</label>
+                        <div class="col-sm-10">
+                            <input id="apellido" type="text" id="inputApellido" class="form-control" placeholder="Apellido" required>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="inputTelefono">teléfono</label>
+                        <div class="col-sm-8">
+                            <input id="telefono" type="text" id="inputTelefono" class="form-control" placeholder="Teléfono" required>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="inputNumPersonas">Número de personas</label>
+                        <div class="col-sm-6">
+                            <input id="numPersonas" type="text" id="inputNumPersonas" class="form-control" placeholder="Num de personas" required>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="inputFchaInicio">Fecha Inicio</label>
+                        <div class="col-sm-8">
+                            <input id="fechaInicio" type="text" id="inputFchaInicio" class="form-control" placeholder="Fecha Inicio" required>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="inputFchaFinal">Fecha Final</label>
+                        <div class="col-sm-8">
+                            <input id="fechaFinal" type="text" id="inputFchaFinal" class="form-control" placeholder="Fecha Final" required>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="inputTipoPaquete">Tipo de paquete</label>
+                        <div class="col-sm-8">
+                            <input id="tipoPaquete" type="text" id="inputTipoPaquete" class="form-control" placeholder="Tipo Paquete (Dorado - Plata)" required>
+                        </div>
+                    </div>           
+
+
+                    <button class="btn btn-lg btn-primary btn-block" type="submit" id="registrar">Registrar</button>                   
+                   
+                </form>
+                <br>
+                    <button class="btn btn-lg btn-primary btn-block" type="submit" id="consultar">Consultar</button>
+            </div>
+        </section>
+        <footer>
+            <p class="mt-5 mb-3 text-muted">&copy; MaKeajse - 2021</p>
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+        crossorigin="anonymous"></script>
+
+    <script src="../services/conexionPOST.js"></script>
+    <script src="../services/conexionGET.js"></script>
+
+</body>
+
+</html>
